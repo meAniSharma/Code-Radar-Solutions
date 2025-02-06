@@ -6,7 +6,7 @@ char* welcome() {
 
 int main() {
     double n;
-    scanf("%g",&n);
-    printf("%g",n);
+    scanf("%lf",&n);
+    printf("%lf",n);
     return 0;
 }
