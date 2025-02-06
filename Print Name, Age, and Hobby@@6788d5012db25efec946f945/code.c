@@ -5,10 +5,12 @@ char* welcome() {
 }
 
 int main() {
-    float a,b,c;
-    float avg;
-    scanf("f %f %f",&a,&b,&c);
-    avg = ((a+b+c)/3);
-    printf("Average: %.2f",avg);
+    char name[20];
+    int age;
+    char hobby[20];
+    scanf("%c %n %c",&name,&age,&hobby);
+    printf("Name: ",name);
+    printf("Age: ",age);
+    printf("Hobby: ",hobby);
     return 0;
 }
