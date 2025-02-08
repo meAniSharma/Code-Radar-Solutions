@@ -24,6 +24,7 @@ int main() {
         int num;
         scanf("%d",&num);
         printf("%d\n",isPrime(num));
+        t--;
     }
 
     return 0;
