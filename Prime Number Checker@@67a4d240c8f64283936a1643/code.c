@@ -7,7 +7,7 @@ int isPrime(int num){
             factor++;
         }
     }
-    if(factor<2){
+    if(factor<=1){
         return 1;
     }
     else{
@@ -20,11 +20,11 @@ int main() {
     int n;
     scanf("%d",&n);
 
-    while(t>0){
+    while(n>0){
         int num;
         scanf("%d",&num);
         printf("%d\n",isPrime(num));
-        t--;
+        n--;
     }
 
     return 0;
