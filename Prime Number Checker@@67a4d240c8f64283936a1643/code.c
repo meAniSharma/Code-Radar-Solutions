@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 // Function to check if a number is prime
 int isPrime(int num) {
@@ -8,7 +7,7 @@ int isPrime(int num) {
 
     if (num % 2 == 0) return 0; // Exclude even numbers > 2
 
-    for (int i = 3; i <= sqrt(num); i += 2) { // Check odd numbers only
+    for (int i = 3; i <= num; i += 2) { // Check odd numbers only
         if (num % i == 0) return 0; // If divisible, not prime
     }
     return 1; // Prime number
