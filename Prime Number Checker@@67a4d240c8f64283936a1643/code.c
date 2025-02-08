@@ -2,18 +2,16 @@
 
 int isPrime(int num){
     int factor = 0;
-    int one = 1;
-    int zero =0;
-    for(int i=0;i<num;i++){
+    for(int i=1;i<num;i++){
         if(num%i==0){
             factor++;
         }
     }
     if(factor<2){
-        return one;
+        return 1;
     }
     else{
-        return two;
+        return 0;
     }
 
 }
