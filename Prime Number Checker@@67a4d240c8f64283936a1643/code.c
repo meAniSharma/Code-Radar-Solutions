@@ -1,26 +1,31 @@
 #include <stdio.h>
 
-// Function to check if a number is prime
-int isPrime(int num) {
-    if (num <= 1) return 0; // 0 and 1 are not prime
-    if (num == 2) return 1; // 2 is the only even prime
-
-    if (num % 2 == 0) return 0; // Exclude even numbers > 2
-
-    for (int i = 3; i <= num; i += 2) { // Check odd numbers only
-        if (num % i == 0) return 0; // If divisible, not prime
+int isPrime(int num){
+    if (num <= 1) return 0;
+    int factor = 0;
+    for(int i=1;i<num;i++){
+        if(num%i==0){
+            factor++;
+        }
     }
-    return 1; // Prime number
+    if(factor<=1){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+
 }
 
 int main() {
-    int n;
-    scanf("%d", &n);
+    int t;
+    scanf("%d",&n);
 
-    while (n-- > 0) { // Simplified loop condition
+    while(t>0){
         int num;
-        scanf("%d", &num);
-        printf("%d\n", isPrime(num));
+        scanf("%d",&num);
+        printf("%d\n",isPrime(num));
+        t--;
     }
 
     return 0;
