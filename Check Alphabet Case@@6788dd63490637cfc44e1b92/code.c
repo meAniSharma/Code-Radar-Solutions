@@ -8,11 +8,11 @@ int main() {
     char ch;
     scanf("%c",&ch);
     if (ch >= 'A' && ch <= 'Z') {
-        printf("Uppercase Character");
+        printf("Uppercase");
     } else if (ch >= 'a' && ch <= 'z') {
-        printf("Lowercase Character");
+        printf("Lowercase");
     } else {
-        printf("Not a Character");
+        printf("Not a Alphabet");
     }
     return 0;
 }
