@@ -20,7 +20,7 @@ int main(){
 
         if(marks>topMarks){
             topRoll = roll;
-            topName[100] = name;
+            topName = name;
             topMarks = marks;
         }
 
