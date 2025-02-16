@@ -13,7 +13,7 @@ int main(){
         float area = len*width;
         float peri = 2*(len+width);
 
-        printf("Reactangle %d: Area = %.2f, Perimeter = %.2f\n",i,area,peri);
+        printf("Rectangle %d: Area = %.2f, Perimeter = %.2f\n",i,area,peri);
     }
     return 0;
 }
