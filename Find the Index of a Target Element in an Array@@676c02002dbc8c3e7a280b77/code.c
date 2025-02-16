@@ -15,7 +15,8 @@ int main(){
     scanf("%d",&find);
     for(int i=0;i<n;i++){
         if(arr[i]==find){
-            return i;
+            printf("%d", i);
+            return true;
         }
     }
     printf("-1");
