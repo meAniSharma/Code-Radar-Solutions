@@ -19,7 +19,6 @@ int main(){
         if(num2>num1){
             num1 = num2;
             res = num2;
-            continue;
         }
 
         if(res<num2){
