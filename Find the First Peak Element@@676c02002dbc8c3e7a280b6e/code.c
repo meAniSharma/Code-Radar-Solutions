@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdbool.h>
 
-int peakElement(int arr[n], int n){
+int peakElement(int arr[], int n){
     if (n == 1) return 0;  // Only one element
     if (arr[0] > arr[1]) return 0;  // First element is peak
     if (arr[n - 1] > arr[n - 2]) return n - 1;  // Last element is peak
