@@ -25,7 +25,7 @@ int main(){
         arr[i] = num;
     }
     
-    int peakIndex = peakElement(arr[n],n);
+    int peakIndex = peakElement(arr,n);
 
 
     if (peakIndex != -1)
