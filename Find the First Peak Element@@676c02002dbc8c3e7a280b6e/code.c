@@ -21,7 +21,7 @@ int main(){
 
         if(res<num2){
             printf("%d",res);
-            return 0;
+            return true;
         }
     }
     res = -1;
