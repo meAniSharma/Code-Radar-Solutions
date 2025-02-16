@@ -4,7 +4,7 @@ int main(){
     int n;
     scanf("%d",&n);
     for(int i=0;i<n;i++){
-        int roll,
+        int roll;
         char name[100];
         float marks;
         scanf("%d",&roll);
