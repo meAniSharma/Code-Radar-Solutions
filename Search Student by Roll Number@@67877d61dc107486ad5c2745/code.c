@@ -12,7 +12,6 @@ struct Student {
 
 int main() {
     int n;
-    printf("Enter number of students: ");
     scanf("%d", &n);
 
     struct Student students[MAX_STUDENTS];
@@ -26,7 +25,6 @@ int main() {
 
     // Search for a student by roll number
     int searchRoll;
-    printf("\nEnter roll number to search: ");
     scanf("%d", &searchRoll);
 
     int found = 0;  // Flag to check if student is found
