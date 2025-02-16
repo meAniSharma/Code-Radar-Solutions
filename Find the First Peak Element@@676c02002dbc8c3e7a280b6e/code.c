@@ -19,7 +19,7 @@ int main(){
 
     int arr[n];
 
-    for(int i=0;i<n-1;i++){
+    for(int i=0;i<n;i++){
         int num;
         scanf("%d",&num);
         arr[i] = num;
