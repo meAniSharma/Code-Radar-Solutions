@@ -9,7 +9,7 @@ void bubblesort(int arr[],int n){
                 arr[j+1]= temp;
             }
     }
-};
+}
 
 void printArray(int arr[],int n){
     for(int j=0;j<n;j++){
