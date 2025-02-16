@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdbool.h>
 
 int main(){
     int n;
@@ -8,6 +9,8 @@ int main(){
     scanf("&d",&num1);
 
     int res = -1;
+
+    bool val = false;
 
     for(int i=0;i<n-1;i++){
         int num2;
@@ -20,12 +23,17 @@ int main(){
         }
 
         if(res<num2){
-            printf("%d",res);
-            return true;
+            val = true;
+            break;
         }
     }
-    res = -1;
-    printf("%d",res);
+    if(bool==false){
+        res = -1;
+        printf("%d",res);
+    }else{
+        printf("%d",res);
+    }
+    
 
     return 0;
 }
