@@ -7,7 +7,7 @@ int main(){
 
     if(n==1){
         printf("Sorted");
-        return;
+        return true;
     }
 
     int num1;
