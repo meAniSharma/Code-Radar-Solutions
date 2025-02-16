@@ -1,10 +1,12 @@
 #include<stdio.h>
 #include <string.h>
 
-int main(){
+int main() {
     char str[100];
-    scanf("%s",str);
+    scanf("%s", str);
 
-    strrev(str);
-    printf("%s",str);
+    for (int i = strlen(str) - 1; i >= 0; i--) 
+        printf("%c", str[i]); // Print characters in reverse order
+
+    return 0;
 }
