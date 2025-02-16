@@ -4,7 +4,7 @@ int main(){
     int n;
     float len;
     float width;
-    scnaf("%d",&n);
+    scanf("%d",&n);
 
     for(int i=1;i<=n;i++){
         scanf("%f",&len);
