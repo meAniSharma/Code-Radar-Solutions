@@ -14,7 +14,7 @@ int main(){
         int num2;
         scanf("%d",&num2);
 
-        if(num2>num1){
+        if(num2>max){
             max = num2;
         }
     }
@@ -23,7 +23,7 @@ int main(){
         int num;
         scanf("%d",&num);
 
-        if(num<num1){
+        if(num<min){
             min = num;
         }
     }
