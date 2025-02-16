@@ -33,7 +33,7 @@ int main(){
         arr[i] = temp[i];
     }
 
-    printArray(arr, n);
+    
 
     return 0;
 }
