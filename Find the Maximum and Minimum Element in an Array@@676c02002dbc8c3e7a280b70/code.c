@@ -5,7 +5,7 @@ int main(){
     scanf("%d",&n);
 
     int num1;
-    scanf("%d";&num1);
+    scanf("%d",&num1);
 
     int max = num1;
     int min = num1;
