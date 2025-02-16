@@ -11,19 +11,12 @@ int main(){
     int min = num1;
 
     for(int i=1;i<n;i++){
-        int num2;
-        scanf("%d",&num2);
-
-        if(num2>max){
-            max = num2;
-        }
-    }
-
-    for(int i=1;i<n;i++){
         int num;
-        scanf("%d",&num);
-
-        if(num<min){
+        scanf("%d", &num);
+        if (num > max) {
+            max = num;
+        }
+        if (num < min) {
             min = num;
         }
     }
