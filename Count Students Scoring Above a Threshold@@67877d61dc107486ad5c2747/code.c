@@ -14,7 +14,7 @@ int main(){
         scanf("%d",&roll);
         scanf("%s",name);
         scanf("%f",&marks);
-        scanf("%f",&thresholdMarks)
+        scanf("%f",&thresholdMarks);
 
         if(thresholdMarks<marks){
             count++;
