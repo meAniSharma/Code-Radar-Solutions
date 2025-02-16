@@ -3,13 +3,13 @@
 int main(){
     int n;
     int count = 0;
+    float thresholdMarks;
     scanf("%d",&n);
 
     for(int i=0;i<n;i++){
         int roll;
         char name[100];
         float marks;
-        float thresholdMarks;
 
         scanf("%d",&roll);
         scanf("%s",name);
