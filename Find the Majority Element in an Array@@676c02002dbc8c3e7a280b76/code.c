@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-#define MAX = 1000;
+#define MAX 1000
 
 int majorityEle(int arr[],int n){
     int freq[MAX] = {0};
