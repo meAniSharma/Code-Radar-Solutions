@@ -21,7 +21,7 @@ int main(){
 
         if(res<num2){
             print("%d",res);
-            return true;
+            return 0;
         }
     }
     res = -1;
