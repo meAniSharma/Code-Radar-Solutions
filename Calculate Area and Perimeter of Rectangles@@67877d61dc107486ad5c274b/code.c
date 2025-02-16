@@ -12,7 +12,7 @@ int main(){
         float area = len*width;
         float peri = 2*(len+width);
 
-        print("Reactange %d: Area = %.2f, Perimeter = %.2f",i,area,peri);
+        printf("Reactange %d: Area = %.2f, Perimeter = %.2f",i,area,peri);
     }
     return 0;
 }
