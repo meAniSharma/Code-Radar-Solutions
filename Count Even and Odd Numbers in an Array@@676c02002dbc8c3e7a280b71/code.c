@@ -8,7 +8,7 @@ int main(){
 
     for(int i=0;i<n;i++){
         int num;
-        scanf("%d",&n);
+        scanf("%d",&num);
 
         if(num%2==0){
             even+=1;
