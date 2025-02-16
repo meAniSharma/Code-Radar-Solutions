@@ -15,8 +15,8 @@ int main() {
         int j++;
     }   
 
-    if(str2==rev){
-        printf("");
+    if(strcmp(rev,str2)){
+        printf("Palindrome");
     }else{
         printf("")
     }
