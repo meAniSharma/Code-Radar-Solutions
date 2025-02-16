@@ -10,7 +10,7 @@ int main(){
         scanf("%d",&roll);
         scanf("%s",name);
         scanf("%f",&marks);
-        printf("Roll Number: %d, Name: %s, Marks: %.2f",roll,name,marks);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f \n",roll,name,marks);
     }
 
     return 0;   
