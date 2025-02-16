@@ -7,8 +7,10 @@ void checkVowelOrConsonant(char ch) {
     int count = 0;
 
     if (ch >= 'a' && ch <= 'z') { // Check if it is a letter
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
             count++;
+        }
+            
     }
     printf("%d",count);
 }
