@@ -9,12 +9,12 @@ int main(){
         int roll;
         char name[100];
         float marks;
-        int thresholdMarks;
+        float thresholdMarks;
 
         scanf("%d",&roll);
         scanf("%s",name);
         scanf("%f",&marks);
-        scanf("%d",&thresholdMarks)
+        scanf("%f",&thresholdMarks)
 
         if(thresholdMarks<marks){
             count++;
