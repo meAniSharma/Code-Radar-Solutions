@@ -10,7 +10,7 @@ int main(){
     int max = num1;
     int min = num1;
 
-    for(int i=1;i<n-1;i++){
+    for(int i=1;i<n;i++){
         int num2;
         scanf("%d",&num2);
 
@@ -19,7 +19,7 @@ int main(){
         }
     }
 
-    for(int i=1;i<n-1;i++){
+    for(int i=1;i<n;i++){
         int num;
         scanf("%d",&num);
 
