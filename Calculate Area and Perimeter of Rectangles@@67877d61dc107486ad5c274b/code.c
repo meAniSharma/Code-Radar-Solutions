@@ -2,7 +2,8 @@
 
 int main(){
     int n;
-    float len , width;
+    float len;
+    float width;
     scnaf("%d",&n);
 
     for(int i=1;i<=n;i++){
