@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 int main(){
-    int n , len , width;
+    int n;
+    float len , width;
     scnaf("%d",&n);
 
     for(int i=1;i<=n;i++){
