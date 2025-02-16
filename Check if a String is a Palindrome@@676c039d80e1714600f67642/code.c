@@ -17,7 +17,7 @@ int main() {
     if(strcmp(rev,str) ==0){
         printf("Palindrome");
     }else{
-        printf("Not a Palindrome")
+        printf("Not a Palindrome");
     }
 
     return 0;
