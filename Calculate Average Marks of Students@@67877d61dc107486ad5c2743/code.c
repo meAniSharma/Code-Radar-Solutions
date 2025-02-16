@@ -2,9 +2,9 @@
 
 int main(){
     int n;
-    int avgMarks = 0;
-
+    float avgMarks = 0.0;
     scanf("%d",&n);
+    
     for(int i=0;i<n;i++){
         int roll;
         char name[100];
@@ -23,5 +23,6 @@ int main(){
 
     avgMarks = sumMarks/count;
 
+    prinf("Average Marks: %.2f",avgMarks);
     return 0;   
 }
