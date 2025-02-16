@@ -6,7 +6,8 @@ int main(){
     scanf("%d",&n);
 
     if(n==1){
-        return "Sorted";
+        printf("Sorted");
+        return;
     }
 
     int num1;
