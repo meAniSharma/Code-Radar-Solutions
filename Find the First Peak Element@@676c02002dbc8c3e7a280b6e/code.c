@@ -27,7 +27,7 @@ int main(){
             break;
         }
     }
-    if(bool==false){
+    if(val==false){
         res = -1;
         printf("%d",res);
     }else{
