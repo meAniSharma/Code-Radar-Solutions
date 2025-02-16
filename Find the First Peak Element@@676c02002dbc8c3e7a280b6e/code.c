@@ -20,7 +20,7 @@ int main(){
         }
 
         if(res<num2){
-            print("%d",res);
+            printf("%d",res);
             return 0;
         }
     }
