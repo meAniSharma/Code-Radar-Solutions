@@ -3,7 +3,7 @@
 #define MAX = 1000;
 
 int majorityEle(int arr[],int n){
-    freq[MAX] = {0};
+    int freq[MAX] = {0};
     int res = 0;
     int count = 0;
 
@@ -31,7 +31,7 @@ int main(){
     scanf("%d",&n);
 
     int arr[n];
-    
+
     for(int i=0;i<n;i++){
         int num;
         scanf("%d",&num);
