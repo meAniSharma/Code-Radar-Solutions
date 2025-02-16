@@ -3,7 +3,7 @@
 
 void findSecondLargest(int arr[], int n) {
     if (n < 2) {
-        printf("No second largest element\n");
+        printf("-1");
         return;
     }
 
