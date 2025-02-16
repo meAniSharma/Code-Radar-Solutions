@@ -22,7 +22,7 @@ int main(){
     }
 
     avgMarks = sumMarks/count;
-    printf("Total Marks: %.2f",sumMarks);
+    printf("Total Marks: %.2f\n",sumMarks);
     printf("Average Marks: %.2f",avgMarks);
     return 0;   
 }
