@@ -5,9 +5,7 @@ int main() {
     char str[100];
     scanf("%s", str);
 
-    char str2[100];
     char rev[100];
-    strcpy(str2,str);
 
     for (int i = strlen(str) - 1; i >= 0; i--){
         int j = 0;
@@ -15,7 +13,7 @@ int main() {
         int j++;
     }   
 
-    if(strcmp(rev,str2)){
+    if(strcmp(rev,str) ==0){
         printf("Palindrome");
     }else{
         printf("")
