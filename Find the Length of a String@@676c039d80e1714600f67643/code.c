@@ -3,9 +3,8 @@
 
 int main(){
     char str[100];
-    scanf("%s", str);
-
-    printf("%d",strlen(str));
-
+    fgets(str, sizeof(str), stdin);
+    
+    printf("%d", strlen(str));
     return 0;
 }
