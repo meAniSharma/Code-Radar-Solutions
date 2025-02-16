@@ -15,9 +15,9 @@ int main() {
     rev[j] = '\0';
 
     if(strcmp(rev,str) ==0){
-        printf("Palindrome");
+        printf("Yes");
     }else{
-        printf("Not a Palindrome");
+        printf("No");
     }
 
     return 0;
