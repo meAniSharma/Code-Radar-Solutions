@@ -1,38 +1,37 @@
 #include<stdio.h>
 #include<stdbool.h>
 
+int peakElement(int arr[n], int n){
+    if (n == 1) return 0;  // Only one element
+    if (arr[0] > arr[1]) return 0;  // First element is peak
+    if (arr[n - 1] > arr[n - 2]) return n - 1;  // Last element is peak
+
+    for (int i = 1; i < n - 1; i++) {
+        if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])
+            return i;
+    }
+    return -1;  
+}
+
 int main(){
     int n;
     scanf("%d",&n);
 
-    int num1;
-    scanf("&d",&num1);
-
-    int res = -1;
-
-    bool val = false;
+    int arr[n];
 
     for(int i=0;i<n-1;i++){
-        int num2;
-        scanf("%d",&num2);
-
-        if(num2>num1){
-            num1 = num2;
-            res = num2;
-        }
-
-        if(res<num2){
-            val = true;
-            break;
-        }
-    }
-    if(val==false){
-        res = -1;
-        printf("%d",res);
-    }else{
-        printf("%d",res);
+        int num;
+        scanf("%d",&num);
+        arr[i] = num;
     }
     
+    int peakIndex = peakElement(arr[n],n);
+
+
+    if (peakIndex != -1)
+        printf("%d", arr[peakIndex]);
+    else
+        printf("-1");
 
     return 0;
 }
