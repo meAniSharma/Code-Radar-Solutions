@@ -11,9 +11,9 @@ int main(){
         scanf("%d",&n);
 
         if(num%2==0){
-            even++;
+            even+=1;
         }else{
-            odd++;
+            odd+=1;
         }
     }
     printf("%d %d",even,odd);
