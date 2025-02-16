@@ -1,23 +1,21 @@
 #include <stdio.h>
 
-void checkVowelOrConsonant(char ch) {
-    // Convert uppercase to lowercase for uniform checking
-    ch = (ch >= 'A' && ch <= 'Z') ? ch + 32 : ch;
+int main() {
+    char str[100];
+    scanf("%s", str); // Reads a single word (use fgets for sentences)
 
     int count = 0;
 
-    if (ch >= 'a' && ch <= 'z') { // Check if it is a letter
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+    for (int i = 0; str[i] != '\0'; i++) {
+        char ch = str[i];
+        if (ch >= 'A' && ch <= 'Z') { // Convert uppercase to lowercase
+            ch += 32;
+        }
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
             count++;
         }
-            
     }
-    printf("%d",count);
-}
 
-int main() {
-    char ch;
-    scanf(" %c", &ch); // Space before %c to ignore whitespace
-    checkVowelOrConsonant(ch);
+    printf("%d", count);
     return 0;
 }
