@@ -37,6 +37,6 @@ int main(){
         arr[i] = num;
     }    
 
-    majorityEle(arr[], n);
+    majorityEle(arr, n);
     return 0;
 }
