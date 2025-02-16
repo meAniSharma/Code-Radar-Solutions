@@ -7,6 +7,7 @@ int main(){
     int arr[n];
     for(int i=0;i<n;i++){
         int num;
+        scanf("%d",&num);
         arr[i] = num;
     }
 
