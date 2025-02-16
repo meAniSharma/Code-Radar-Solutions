@@ -6,8 +6,8 @@ int main(){
     scnaf("%d",&n);
 
     for(int i=1;i<=n;i++){
-        scanf("%d",&len);
-        scanf("%d",&width);
+        scanf("%f",&len);
+        scanf("%f",&width);
 
         float area = len*width;
         float peri = 2*(len+width);
