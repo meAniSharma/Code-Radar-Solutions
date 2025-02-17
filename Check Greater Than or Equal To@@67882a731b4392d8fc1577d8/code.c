@@ -1,5 +1,6 @@
+
 #include <stdio.h>
-#include <stdbool.h> // Include for boolean data type
+#include <stdbool.h>
 
 int main() {
     int num1, num2;
@@ -8,7 +9,7 @@ int main() {
     scanf("%d %d", &num1, &num2);
 
     // Comparison and Output
-    if (num1 > num2) {
+    if (num1 >= num2) {
         printf("True\n");
     } else {
         printf("False\n");
