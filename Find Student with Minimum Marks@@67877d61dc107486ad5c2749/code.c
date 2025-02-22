@@ -5,7 +5,7 @@
 // Define the Student structure
 struct Student {
     int rollNumber;
-    char name;
+    char name[50];
     double marks;
 };
 
@@ -37,9 +37,10 @@ int main() {
         }
     }
 
-    // Display the details of the student with the lowest marks
-    if (minIndex!= -1) {
-        printf("%d %s %.2lf\n", students[minIndex].rollNumber, students[minIndex].name, students[minIndex].marks);
+    // Display the details of the student with the lowest marks in the specified format
+    if (minIndex != -1) {
+        printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2lf\n", 
+               students[minIndex].rollNumber, students[minIndex].name, students[minIndex].marks);
     }
 
     return 0;
