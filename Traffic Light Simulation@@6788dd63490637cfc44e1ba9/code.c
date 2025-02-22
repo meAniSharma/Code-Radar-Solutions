@@ -1,27 +1,20 @@
 #include <stdio.h>
 
 int main() {
-  char grade;
-  scanf(" %c", &grade);  // Note the space before %c to consume any leftover newline
-
-  switch (grade) {
-    case 'A':
-      printf("Excellent\n");
+  char light;
+  scanf("%c", &light);
+  switch (light) {
+    case 'R':
+      printf("Stop\n");
       break;
-    case 'B':
-      printf("Good\n");
+    case 'G':
+      printf("Go\n");
       break;
-    case 'C':
-      printf("Average\n");
-      break;
-    case 'D':
-      printf("Below Average\n");
-      break;
-    case 'F':
-      printf("Fail\n");
+    case 'Y':
+      printf("Slow Down\n");
       break;
     default:
-      printf("Invalid grade\n");
+      printf("Invalid input\n");
   }
   return 0;
 }
