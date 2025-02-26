@@ -4,6 +4,7 @@ int main(){
     int n;
     scanf("%d",&n);
     int count = 0;
+    int max_count = 0;
     int arr[20];
 
     for(int i=0;i<n;i++){
@@ -17,6 +18,7 @@ int main(){
         
         if(arr[i]>arr[i-1]){
             count+=1;
+            max_count = count;
         }else{
             count=0;
         }
