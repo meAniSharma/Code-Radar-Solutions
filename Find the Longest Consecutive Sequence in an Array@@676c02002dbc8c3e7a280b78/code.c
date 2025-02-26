@@ -24,5 +24,5 @@ int main(){
         }
     }
 
-    printf("%d",count);
+    printf("%d",max_count);
 }
