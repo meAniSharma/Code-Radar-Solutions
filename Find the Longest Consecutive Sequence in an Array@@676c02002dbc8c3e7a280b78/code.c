@@ -3,7 +3,7 @@
 int main(){
     int n;
     scanf("%d",&n);
-
+    int count = 0;
     int arr[20];
 
     for(int i=0;i<n;i++){
@@ -13,9 +13,14 @@ int main(){
         arr[i] = num;
     }
 
-    for(int i=0;i<n;i++){
-        printf("%d",arr[i]);
+    for(int i=1;i<n;i++){
+        
+        if(arr[i]>arr[i-1]){
+            count+=1;
+        }else{
+            count=0;
+        }
     }
 
-    return 0;
+    return count;
 }
