@@ -7,7 +7,7 @@ int longestConsecutive(int* nums, int numsSize) {
         return 0;
     }
 
-    qsort(nums, numsSize, sizeof(int), compare);
+    qsort(nums, numsSize, sizeof(int));
 
     int maxLength = 1;
     int currentLength = 1;
