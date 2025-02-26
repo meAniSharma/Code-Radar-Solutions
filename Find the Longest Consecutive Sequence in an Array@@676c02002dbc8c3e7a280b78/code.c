@@ -1,28 +1,49 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main(){
-    int n;
-    scanf("%d",&n);
-    int count = 0;
-    int max_count = 0;
-    int arr[20];
+int compare(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
 
-    for(int i=0;i<n;i++){
-        int num;
-        scanf("%d",&num);
-
-        arr[i] = num;
+int longestConsecutive(int* nums, int numsSize) {
+    if (numsSize == 0) {
+        return 0;
     }
 
-    for(int i=1;i<n;i++){
-        
-        if(arr[i]>arr[i-1]){
-            count+=1;
-            max_count = count;
-        }else{
-            count=0;
+    qsort(nums, numsSize, sizeof(int), compare);
+
+    int maxLength = 1;
+    int currentLength = 1;
+    for (int i = 1; i < numsSize; i++) {
+        if (nums[i] == nums[i - 1] + 1) {
+            currentLength++;
+        } else if (nums[i] != nums[i - 1]) {
+            if (currentLength > maxLength) {
+                maxLength = currentLength;
+            }
+            currentLength = 1;
         }
     }
 
-    printf("%d",max_count);
+    if (currentLength > maxLength) {
+        maxLength = currentLength;
+    }
+
+    return maxLength;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int* nums = (int*)malloc(n * sizeof(int));
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &nums[i]);
+    }
+
+    int result = longestConsecutive(nums, n);
+    printf("%d\n", result);
+
+    free(nums);
+    return 0;
 }
