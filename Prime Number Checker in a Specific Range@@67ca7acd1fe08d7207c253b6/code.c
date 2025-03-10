@@ -1,4 +1,10 @@
 void printPrimesInRange(int a,int b){
+    if(a==b){
+        printf("No prime numbers");
+    }
+    if(a<2){
+        a = 3;
+    }
     for(int i=a;i<=b;i++){
         int num = i;
         int factor = 0;
