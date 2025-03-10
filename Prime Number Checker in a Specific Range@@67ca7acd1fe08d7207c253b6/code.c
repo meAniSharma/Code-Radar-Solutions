@@ -3,11 +3,11 @@ void printPrimesInRange(int a,int b){
         int num = i;
         int factor = 0;
         for(int j=2;j<num;j++){
-            if(num%j != 0){
+            if(num%j == 0){
                 factor++;
             }
         }
-        if(factor<1){
+        if(factor<0){
             printf("%d ", num);
         }
     }
