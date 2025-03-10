@@ -7,7 +7,7 @@ void printPrimesInRange(int a,int b){
                 factor++;
             }
         }
-        if(factor>0){
+        if(factor>1){
             printf("%d ", num);
         }
     }
