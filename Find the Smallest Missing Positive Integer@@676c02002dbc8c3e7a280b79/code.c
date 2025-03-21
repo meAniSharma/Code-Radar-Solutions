@@ -21,7 +21,7 @@ int main(){
     for(int i=1;i<n;i++){
         count++;
         if(count != arr[i]){
-            return count;
+            printf("%d",count);
         }
     }
 
